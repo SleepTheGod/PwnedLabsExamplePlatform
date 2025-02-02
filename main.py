@@ -31,4 +31,5 @@ def teams():
     return render_template('teams.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Running on localhost (127.0.0.1) and port 5000
+    app.run(debug=True, host='127.0.0.1', port=5000)
