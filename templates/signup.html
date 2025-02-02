@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWNED LABS - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(273.89deg, #210037 1.73%, #7303C0 96.94%);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
+        }
+        .card:hover:nth-child(2) {
+            box-shadow: 0 4px 15px rgba(128, 0, 128, 0.6);
+        }
+        .card:hover:nth-child(3) {
+            box-shadow: 0 4px 15px rgba(0, 0, 255, 0.6);
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid white;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        header nav button {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: bold;
+        }
+        header nav button.bg-black {
+            background-color: #000;
+            color: white;
+        }
+        header nav button.border {
+            border: 2px solid white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PWNED LABS</h1>
+        <nav>
+            <a href="#">Challenges</a>
+            <a href="#">Leaderboard</a>
+            <a href="#">Teams</a>
+            <button class="border">Sign in</button>
+            <button class="bg-black">Sign up</button>
+        </nav>
+    </header>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Create Account</h2>
+            <div class="card">
+                <form action="#" method="POST">
+                    <label for="username" class="block">Username</label>
+                    <input type="text" id="username" name="username" class="w-full p-2 mt-2 mb-4 bg-gray-800 text-white rounded" required>
+
+                    <label for="email" class="block">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 mt-2 mb-4 bg-gray-800 text-white rounded" required>
+
+                    <label for="password" class="block">Password</label>
+                    <input type="password" id="password" name="password" class="w-full p-2 mt-2 mb-4 bg-gray-800 text-white rounded" required>
+
+                    <button type="submit" class="bg-black text-white px-4 py-2 rounded w-full">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
