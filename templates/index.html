@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,12 +20,6 @@
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
-        }
-        .card:hover:nth-child(2) {
-            box-shadow: 0 4px 15px rgba(128, 0, 128, 0.6);
-        }
-        .card:hover:nth-child(3) {
-            box-shadow: 0 4px 15px rgba(0, 0, 255, 0.6);
         }
         header {
             background-color: rgba(0, 0, 0, 0.7);
@@ -64,11 +57,15 @@
     <header>
         <h1>PWNED LABS</h1>
         <nav>
-            <a href="#">Challenges</a>
-            <a href="#">Leaderboard</a>
-            <a href="#">Teams</a>
-            <button class="border">Sign in</button>
-            <button class="bg-black">Sign up</button>
+            <a href="{{ url_for('challenges') }}">Challenges</a>
+            <a href="{{ url_for('leaderboard') }}">Leaderboard</a>
+            <a href="{{ url_for('teams') }}">Teams</a>
+            <a href="{{ url_for('signin') }}">
+                <button class="border">Sign in</button>
+            </a>
+            <a href="{{ url_for('signup') }}">
+                <button class="bg-black">Sign up</button>
+            </a>
         </nav>
     </header>
     
